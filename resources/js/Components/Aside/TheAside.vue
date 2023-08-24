@@ -3,8 +3,8 @@
         class="lg:fixed lg:h-full lg:max-h-full overflow-y-auto p-3 lg:p-4 shrink-0 shadow z-10 bg-slate-900"
         :class="{ 'lg:w-72': asideOpen, 'w-16': !asideOpen }"
     >
-        <div class="min-h-full flex flex-col justify-between gap-8">
-            <div class="flex flex-col gap-8 break-all">
+        <div class="min-h-full flex flex-col justify-between gap-6 sm:gap-8">
+            <div class="flex flex-col gap-6 sm:gap-8 break-all">
                 <div
                     class="flex justify-between items-center gap-3 flex-row-reverse lg:justify-start lg:flex-row"
                 >

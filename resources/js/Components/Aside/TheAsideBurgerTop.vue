@@ -1,6 +1,13 @@
 <template>
     <button @click="openMenu" class="w-7 h-7 lg:hidden">
-        <img src="/images/burger-icon--white.svg" alt="" />
+        <img
+            :src="
+                open
+                    ? '/images/burger-close--white.svg'
+                    : '/images/burger-icon--white.svg'
+            "
+            alt=""
+        />
     </button>
 </template>
 

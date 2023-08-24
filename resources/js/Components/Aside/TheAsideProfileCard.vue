@@ -1,6 +1,6 @@
 <template>
     <a
-        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
+        class="flex items-center gap-2 flex-wrap max-w-fit lg:max-w-full mt-4 p-3 sm:p-4 rounded-xl cursor-pointer border border-orange-500 bg-slate-600"
         href="./profile.html"
     >
         <img class="h-10" src="/images/pedro_pascal.png" alt="" />
