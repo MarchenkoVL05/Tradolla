@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +16,5 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return inertia('Welcome');
-});
+Route::get('/',[MainController::class, 'index'])->name('dashboard');
+Route::get('/catalog',[CatalogController::class, 'index'])->name('catalog');

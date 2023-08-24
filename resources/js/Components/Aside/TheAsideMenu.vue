@@ -22,20 +22,27 @@
         </div>
         <ul class="flex flex-col" :class="{ 'gap-3': menu.isOpen }">
             <li v-for="(link, linkIndex) in menu.links" :key="linkIndex">
-                <a
+                <Link
                     v-if="menu.isOpen"
                     class="text-sm sm:text-base transition-all hover:text-orange-400"
-                    href="./offers.html"
+                    :class="{ 'text-orange-400': $page.url === link.url }"
+                    :href="link.url"
                 >
-                    {{ link }}
-                </a>
+                    {{ link.name }}
+                </Link>
             </li>
         </ul>
     </div>
 </template>
 
 <script>
+import { Link } from "@inertiajs/vue3";
+
 export default {
+    components: {
+        Link,
+    },
+
     props: ["menuLinks", "open"],
 
     methods: {

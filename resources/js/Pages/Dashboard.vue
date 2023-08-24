@@ -1,5 +1,5 @@
 <template>
-    <base-layout> welcome component </base-layout>
+    <base-layout> dashboard component </base-layout>
 </template>
 
 <script>

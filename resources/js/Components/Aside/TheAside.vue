@@ -56,6 +56,8 @@ import TheLogo from "../TheLogo.vue";
 import TheAsideBurgerLeft from "./TheAsideBurgerLeft.vue";
 import TheAsideBurgerTop from "./TheAsideBurgerTop.vue";
 
+import menuLinks from "../../menuLinks.js";
+
 export default {
     components: {
         TheAsideMenu,
@@ -70,32 +72,7 @@ export default {
             asideOpen: true,
             menuOpen: false,
             windowWidth: window.innerWidth,
-            asideMenuLinks: [
-                {
-                    title: "Home",
-                    image: "/images/home-icon.svg",
-                    links: ["Dashboard", "Favorites", "Notifications"],
-                    isOpen: true,
-                },
-                {
-                    title: "Procurements",
-                    image: "/images/document.svg",
-                    links: ["Procurement processes", "Our proposals", "Orders"],
-                    isOpen: false,
-                },
-                {
-                    title: "E-commerce",
-                    image: "/images/cart-icon.svg",
-                    links: ["Catalog", "Our products"],
-                    isOpen: false,
-                },
-                {
-                    title: "Social",
-                    image: "/images/social.svg",
-                    links: ["Companies", "Chat and calls", "Profile"],
-                    isOpen: false,
-                },
-            ],
+            asideMenuLinks: menuLinks,
         };
     },
 
