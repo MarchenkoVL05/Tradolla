@@ -23,20 +23,18 @@
                     href="./company.html"
                     >LLC 'VIATSKY PLYWOOD COMBINATE'</a
                 >
-                <a
-                    class="block mt-2 text-lg sm:text-xl text-gray-800 font-medium hover:underline"
-                    href="./product-details.html"
+                <product-title
                     >Apple iMac Pro (27-inch with Retina 5K Display, 3.0GHz
-                    10-core Intel Xeon W, 1TB SSD)
-                </a>
+                    10-core Intel Xeon W, 1TB SSD)</product-title
+                >
                 <product-tags></product-tags>
-                <div class="mt-2 text-gray-500">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                <product-descr
+                    >Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Asperiores doloremque, consequuntur iusto alias illum
                     voluptates non harum. Aspernatur earum alias illo blanditiis
                     provident corrupti similique illum omnis sit, quisquam
                     facere.
-                </div>
+                </product-descr>
             </div>
         </div>
         <product-list-card-info></product-list-card-info>
@@ -46,7 +44,9 @@
 <script>
 import ProductListCardInfo from "./ProductListCardInfo.vue";
 import NewBadge from "../NewBadge.vue";
+import ProductTitle from "./ProductTitle.vue";
 import ProductTags from "./ProductTags.vue";
+import ProductDescr from "./ProductDescr.vue";
 
 export default {
     props: ["index"],
@@ -54,7 +54,9 @@ export default {
     components: {
         ProductListCardInfo,
         NewBadge,
+        ProductTitle,
         ProductTags,
+        ProductDescr,
     },
 };
 </script>

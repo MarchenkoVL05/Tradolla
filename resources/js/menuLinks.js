@@ -28,7 +28,7 @@ export default [
             },
             {
                 name: "Our proposals",
-                url: "/procurements/offers",
+                url: "/procurements/our",
             },
             {
                 name: "Orders",

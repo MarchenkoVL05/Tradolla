@@ -2,7 +2,7 @@
     <div
         class="flex flex-col gap-2 flex-shrink-0 rounded bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border"
     >
-        <div class="text-2xl text-slate-800">$<span>799</span></div>
+        <product-price>799</product-price>
         <rating-stars></rating-stars>
         <stock-info></stock-info>
 
@@ -21,6 +21,7 @@ import ButtonOrange from "../Buttons/ButtonOrange.vue";
 import ButtonWhite from "../Buttons/ButtonWhite.vue";
 import StockInfo from "../StockInfo.vue";
 import RatingStars from "../RatingStars.vue";
+import ProductPrice from "./ProductPrice.vue";
 
 export default {
     components: {
@@ -28,6 +29,7 @@ export default {
         ButtonWhite,
         StockInfo,
         RatingStars,
+        ProductPrice,
     },
 };
 </script>
