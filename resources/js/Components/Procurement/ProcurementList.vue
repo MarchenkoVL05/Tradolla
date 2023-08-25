@@ -16,14 +16,14 @@
             >Chunghwa Telecom Ltd.</a
         >
         <span
-            class="col-span-1 p-4 xl:text-lg flex items-center"
+            class="col-span-1 p-4 text-sm xl:text-base flex items-center"
             :class="{ 'bg-gray-50': index % 2 == 0 }"
-            >12.04.23</span
+            >12/04/2023</span
         >
         <span
-            class="col-span-1 p-4 xl:text-lg flex items-center"
+            class="col-span-1 p-4 text-sm xl:text-base flex items-center"
             :class="{ 'bg-gray-50': index % 2 == 0 }"
-            >31.12.23</span
+            >31/12/2023</span
         >
     </div>
 </template>

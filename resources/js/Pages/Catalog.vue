@@ -1,13 +1,11 @@
 <template>
     <page-head><title>Catalog | Tradolla.com</title></page-head>
     <base-layout>
-        <div class="max-w-[1627px] mx-auto">
-            <title-filter>Apply your filters &#8595;</title-filter>
-            <product-filter></product-filter>
-            <advanced-search></advanced-search>
-            <sort-products></sort-products>
-            <product-list></product-list>
-        </div>
+        <title-filter>Apply your filters &#8595;</title-filter>
+        <product-filter></product-filter>
+        <advanced-search></advanced-search>
+        <sort-products></sort-products>
+        <product-list></product-list>
     </base-layout>
 </template>
 

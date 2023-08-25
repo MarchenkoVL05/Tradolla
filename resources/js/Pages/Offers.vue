@@ -1,12 +1,10 @@
 <template>
     <page-head><title>Procurements processes | Tradolla.com</title></page-head>
     <base-layout>
-        <div class="max-w-[1627px] mx-auto">
-            <title-filter>Find your offer &#8595;</title-filter>
-            <procurement-filter></procurement-filter>
-            <advanced-search></advanced-search>
-            <procurement-table></procurement-table>
-        </div>
+        <title-filter>Find your offer &#8595;</title-filter>
+        <procurement-filter></procurement-filter>
+        <advanced-search></advanced-search>
+        <procurement-table></procurement-table>
     </base-layout>
 </template>
 
