@@ -12,6 +12,7 @@
             </Link>
         </h1>
         <div class="mt-4 sm:mt-2 grid grid-cols-12 gap-3">
+            <!-- Statistic Cards -->
             <statistic-card class="col-span-12" :color="'green'">
                 <template #title>Total sales:</template>
                 <template #amount>$270 000</template>
@@ -24,18 +25,17 @@
                 <template #title>This month::</template>
                 <template #amount>$55 440 &darr;</template>
             </statistic-card>
-            <div
-                class="col-span-12 md:col-span-6 p-3 sm:p-4 rounded-md border shadow bg-white"
-            >
-                <p class="font-bold">Number of deals</p>
-                <canvas class="mt-4" id="dealsPerMonth"></canvas>
-            </div>
-            <div
-                class="col-span-12 md:col-span-6 p-3 sm:p-4 rounded-md border shadow bg-white"
-            >
-                <p class="font-bold">Total sales (USD)</p>
-                <canvas class="mt-4" id="totalSales"></canvas>
-            </div>
+
+            <!-- Info widgets -->
+            <info-widget class="col-span-12 md:col-span-6 p-3 sm:p-4">
+                <template #title>Number of deals</template>
+                <template #graphic><canvas class="mt-4"></canvas></template>
+            </info-widget>
+            <info-widget class="col-span-12 md:col-span-6 p-3 sm:p-4">
+                <template #title>Total sales (USD)</template>
+                <template #graphic><canvas class="mt-4"></canvas></template>
+            </info-widget>
+
             <div
                 class="col-span-12 2xl:col-span-9 py-4 rounded-md border overflow-auto shadow bg-white"
             >
@@ -177,12 +177,9 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="col-span-12 md:col-span-4 2xl:col-span-3 p-4 rounded-md border shadow bg-white"
-            >
-                <p class="font-bold">Popularity of categories</p>
-                <canvas class="mt-4" id="popularityOfCategories"></canvas>
-            </div>
+            <info-widget class="col-span-12 md:col-span-4 2xl:col-span-3 p-4">
+                <template #title>Popularity of categories</template>
+            </info-widget>
         </div>
     </base-layout>
 </template>
@@ -191,6 +188,7 @@
 import { Head as PageHead, Link } from "@inertiajs/vue3";
 import BaseLayout from "../Layouts/BaseLayout.vue";
 import StatisticCard from "../Components/StatisticCard.vue";
+import InfoWidget from "../Components/InfoWidget.vue";
 
 export default {
     components: {
@@ -198,6 +196,7 @@ export default {
         Link,
         BaseLayout,
         StatisticCard,
+        InfoWidget,
     },
 };
 </script>
