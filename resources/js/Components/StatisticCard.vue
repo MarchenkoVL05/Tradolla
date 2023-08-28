@@ -4,7 +4,6 @@
         <span :class="cardText"><slot name="amount"></slot></span>
     </div>
 </template>
-
 <script>
 export default {
     props: ["color"],
@@ -12,28 +11,26 @@ export default {
         cardBorder() {
             const baseClasses =
                 "p-2 sm:p-4 rounded text-sm sm:text-base sm:col-span-4 flex flex-wrap gap-1 font-medium border-l-4 shadow";
-            const colorClass = this.getColorClass(this.color, "border");
-
-            return `${baseClasses} ${colorClass}`;
+            let colorClasses = "";
+            if (this.color === "green") {
+                colorClasses = "border-green-500 bg-white";
+            } else if (this.color === "orange") {
+                colorClasses = "border-orange-500 bg-white";
+            } else if (this.color === "red") {
+                colorClasses = "border-red-500 bg-white";
+            }
+            return `${baseClasses} ${colorClasses}`;
         },
         cardText() {
-            return this.getColorClass(this.color, "text");
-        },
-    },
-    methods: {
-        getColorClass(color, prefix) {
-            const colorMap = {
-                green: `${prefix}-green-500 ${
-                    prefix == "border" ? "bg-white" : ""
-                }`,
-                slate: `${prefix}-slate-500 ${
-                    prefix == "border" ? "bg-white" : ""
-                }`,
-                red: `${prefix}-red-500 ${
-                    prefix == "border" ? "bg-white" : ""
-                }`,
-            };
-            return colorMap[color] || "";
+            let colorClass = "";
+            if (this.color === "green") {
+                colorClass = "text-green-500";
+            } else if (this.color === "orange") {
+                colorClass = "text-orange-500";
+            } else if (this.color === "red") {
+                colorClass = "text-red-500";
+            }
+            return colorClass;
         },
     },
 };
