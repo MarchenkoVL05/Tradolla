@@ -27,13 +27,15 @@
             </statistic-card>
 
             <!-- Info widgets -->
-            <info-widget class="col-span-12 md:col-span-6 p-3 sm:p-4">
+            <info-widget class="col-span-6 sm:p-4">
                 <template #title>Number of deals</template>
-                <template #graphic><canvas class="mt-4"></canvas></template>
+                <template #graphic><bar-chart></bar-chart></template>
             </info-widget>
-            <info-widget class="col-span-12 md:col-span-6 p-3 sm:p-4">
+            <info-widget class="col-span-6 sm:p-4">
                 <template #title>Total sales (USD)</template>
-                <template #graphic><canvas class="mt-4"></canvas></template>
+                <template #graphic>
+                    <line-chart></line-chart>
+                </template>
             </info-widget>
 
             <orders-preview-table
@@ -41,6 +43,7 @@
             ></orders-preview-table>
             <info-widget class="col-span-12 md:col-span-4 2xl:col-span-3 p-4">
                 <template #title>Popularity of categories</template>
+                <template #graphic><doughnut-chart></doughnut-chart></template>
             </info-widget>
         </div>
     </base-layout>
@@ -52,6 +55,9 @@ import BaseLayout from "../Layouts/BaseLayout.vue";
 import StatisticCard from "../Components/StatisticCard.vue";
 import InfoWidget from "../Components/InfoWidget.vue";
 import OrdersPreviewTable from "../Components/OrdersPreviewTable/OrdersPreviewTable.vue";
+import BarChart from "../Components/Charts/BarChart.vue";
+import LineChart from "../Components/Charts/LineChart.vue";
+import DoughnutChart from "../Components/Charts/DoughnutChart.vue";
 
 export default {
     components: {
@@ -61,6 +67,9 @@ export default {
         StatisticCard,
         InfoWidget,
         OrdersPreviewTable,
+        BarChart,
+        LineChart,
+        DoughnutChart,
     },
 };
 </script>
