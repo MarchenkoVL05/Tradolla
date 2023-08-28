@@ -22,7 +22,7 @@
                 <template #amount>$3 400 000</template>
             </statistic-card>
             <statistic-card class="col-span-6" :color="'red'">
-                <template #title>This month::</template>
+                <template #title>This month:</template>
                 <template #amount>$55 440 &darr;</template>
             </statistic-card>
 
