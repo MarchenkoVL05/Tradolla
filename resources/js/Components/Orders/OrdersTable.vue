@@ -2,7 +2,7 @@
     <div class="w-full overflow-auto">
         <!-- Table -->
         <div
-            class="grid grid-cols-4 min-w-[700px] rounded border-x shadow bg-white"
+            class="grid grid-cols-4 min-w-[700px] rounded-md overflow-auto border-x shadow bg-white"
         >
             <!-- table-head -->
             <orders-table-head></orders-table-head>
