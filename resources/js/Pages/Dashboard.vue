@@ -36,147 +36,9 @@
                 <template #graphic><canvas class="mt-4"></canvas></template>
             </info-widget>
 
-            <div
-                class="col-span-12 2xl:col-span-9 py-4 rounded-md border overflow-auto shadow bg-white"
-            >
-                <div class="px-4 flex justify-between gap-4">
-                    <div
-                        class="flex justify-between gap-4 sm:text-lg font-bold"
-                    >
-                        Purchase orders:
-                    </div>
-                    <a class="hover:underline" href="./order-list.html"
-                        >View all</a
-                    >
-                </div>
-                <div
-                    class="mt-2 grid grid-cols-12 text-sm sm:text-base min-w-[686px]"
-                >
-                    <div class="col-span-3 px-4 py-2 border-b font-semibold">
-                        Order
-                    </div>
-                    <div class="col-span-7 px-4 py-2 border-b font-semibold">
-                        Offer
-                    </div>
-                    <div class="col-span-2 px-4 py-2 border-b font-semibold">
-                        Action
-                    </div>
-                    <!-- 1 order -->
-                    <div class="col-span-3 p-4">
-                        Order by
-                        <a
-                            class="text-blue-500 hover:underline"
-                            href="./company.html"
-                            >Segezha Group</a
-                        >
-                    </div>
-                    <a
-                        class="col-span-7 p-4 font-medium hover:underline"
-                        href="./offer-details.html"
-                        >Construction Services for Office Expansion Project
-                    </a>
-                    <div class="col-span-2 p-4">
-                        <a class="text-orange-500 hover:underline" href="#"
-                            >Open order</a
-                        >
-                    </div>
-                    <!-- 2 order -->
-                    <div class="col-span-3 p-4 bg-slate-100">
-                        Order by
-                        <a
-                            class="text-blue-500 hover:underline"
-                            href="./company.html"
-                            >Aksioma</a
-                        >
-                    </div>
-                    <a
-                        class="col-span-7 p-4 bg-slate-100 font-medium hover:underline"
-                        href="./offer-details.html"
-                        >Software Development Services
-                    </a>
-                    <div class="col-span-2 p-4 bg-slate-100">
-                        <a class="text-orange-500 hover:underline" href="#"
-                            >Open order</a
-                        >
-                    </div>
-                    <!-- 3 order -->
-                    <div class="col-span-3 p-4">
-                        Order by
-                        <a
-                            class="text-blue-500 hover:underline"
-                            href="./company.html"
-                            >Segezha Group</a
-                        >
-                    </div>
-                    <a
-                        class="col-span-7 p-4 font-medium hover:underline"
-                        href="./offer-details.html"
-                        >Chunghwa Telecom Co., Ltd.
-                    </a>
-                    <div class="col-span-2 p-4">
-                        <a class="text-orange-500 hover:underline" href="#"
-                            >Open order</a
-                        >
-                    </div>
-                    <!-- 4 order -->
-                    <div class="col-span-3 p-4 bg-slate-100">
-                        Order by
-                        <a
-                            class="text-blue-500 hover:underline"
-                            href="./company.html"
-                            >Aksioma</a
-                        >
-                    </div>
-                    <a
-                        class="col-span-7 p-4 bg-slate-100 font-medium hover:underline"
-                        href="./offer-details.html"
-                        >Software Development Services
-                    </a>
-                    <div class="col-span-2 p-4 bg-slate-100">
-                        <a class="text-orange-500 hover:underline" href="#"
-                            >Open order</a
-                        >
-                    </div>
-                    <!-- 5 order -->
-                    <div class="col-span-3 p-4">
-                        Order by
-                        <a
-                            class="text-blue-500 hover:underline"
-                            href="./company.html"
-                            >Segezha Group</a
-                        >
-                    </div>
-                    <a
-                        class="col-span-7 p-4 font-medium hover:underline"
-                        href="./offer-details.html"
-                        >Construction Services for Office Expansion Project
-                    </a>
-                    <div class="col-span-2 p-4">
-                        <a class="text-orange-500 hover:underline" href="#"
-                            >Open order</a
-                        >
-                    </div>
-                    <!-- 6 order -->
-                    <div class="col-span-3 p-4 bg-slate-100">
-                        Order by
-                        <a
-                            class="text-blue-500 hover:underline"
-                            href="./company.html"
-                            >Wialon</a
-                        >
-                    </div>
-                    <a
-                        class="col-span-7 p-4 bg-slate-100 font-medium hover:underline"
-                        href="./offer-details.html"
-                        >Software Development Services
-                    </a>
-                    <div class="col-span-2 p-4 bg-slate-100">
-                        <a class="text-orange-500 hover:underline" href="#"
-                            >Open order</a
-                        >
-                    </div>
-                </div>
-            </div>
+            <orders-preview-table
+                class="col-span-12 2xl:col-span-9"
+            ></orders-preview-table>
             <info-widget class="col-span-12 md:col-span-4 2xl:col-span-3 p-4">
                 <template #title>Popularity of categories</template>
             </info-widget>
@@ -189,6 +51,7 @@ import { Head as PageHead, Link } from "@inertiajs/vue3";
 import BaseLayout from "../Layouts/BaseLayout.vue";
 import StatisticCard from "../Components/StatisticCard.vue";
 import InfoWidget from "../Components/InfoWidget.vue";
+import OrdersPreviewTable from "../Components/OrdersPreviewTable/OrdersPreviewTable.vue";
 
 export default {
     components: {
@@ -197,6 +60,7 @@ export default {
         BaseLayout,
         StatisticCard,
         InfoWidget,
+        OrdersPreviewTable,
     },
 };
 </script>
