@@ -14,8 +14,8 @@ export default {
             let colorClasses = "";
             if (this.color === "green") {
                 colorClasses = "border-green-500 bg-white";
-            } else if (this.color === "orange") {
-                colorClasses = "border-orange-500 bg-white";
+            } else if (this.color === "slate") {
+                colorClasses = "border-slate-500 bg-white";
             } else if (this.color === "red") {
                 colorClasses = "border-red-500 bg-white";
             }
@@ -25,8 +25,8 @@ export default {
             let colorClass = "";
             if (this.color === "green") {
                 colorClass = "text-green-500";
-            } else if (this.color === "orange") {
-                colorClass = "text-orange-500";
+            } else if (this.color === "slate") {
+                colorClass = "text-slate-600";
             } else if (this.color === "red") {
                 colorClass = "text-red-500";
             }

@@ -26,12 +26,12 @@
                 <template #amount>$55 440 &darr;</template>
             </statistic-card>
 
-            <!-- Info widgets -->
-            <info-widget class="col-span-6 sm:p-4">
+            <!-- Info Widgets -->
+            <info-widget class="col-span-12 md:col-span-6 p-3 sm:p-4">
                 <template #title>Number of deals</template>
                 <template #graphic><bar-chart></bar-chart></template>
             </info-widget>
-            <info-widget class="col-span-6 sm:p-4">
+            <info-widget class="col-span-12 md:col-span-6 p-3 sm:p-4">
                 <template #title>Total sales (USD)</template>
                 <template #graphic>
                     <line-chart></line-chart>
@@ -41,7 +41,9 @@
             <orders-preview-table
                 class="col-span-12 2xl:col-span-9"
             ></orders-preview-table>
-            <info-widget class="col-span-12 md:col-span-4 2xl:col-span-3 p-4">
+            <info-widget
+                class="col-span-12 sm:col-span-6 md:col-span-4 2xl:col-span-3 p-4"
+            >
                 <template #title>Popularity of categories</template>
                 <template #graphic><doughnut-chart></doughnut-chart></template>
             </info-widget>
