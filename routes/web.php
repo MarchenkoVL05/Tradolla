@@ -4,9 +4,9 @@ use App\Http\Controllers\MainController;
 
 use App\Http\Controllers\Catalog\CatalogController;
 use App\Http\Controllers\Catalog\MyCatalogController;
-
 use App\Http\Controllers\Procurement\ProcurementController;
 use App\Http\Controllers\Procurement\MyProcurementController;
+use App\Http\Controllers\OrderController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +30,7 @@ Route::get('/catalog/our/create', [MyCatalogController::class, 'create'])->name(
 Route::post('/catalog/our', [MyCatalogController::class, 'store'])->name('catalog.our.store');
 
 Route::get("/procurements", [ProcurementController::class, 'index'])->name('procurements');
+Route::get("/procurements/orders", [OrderController::class, 'index'])->name('orders');
 Route::get('/procurements/our',[MyProcurementController::class, 'index'])->name('procurements.our.index');
 Route::get('/procurements/our/create', [MyProcurementController::class, 'create'])->name('procurements.our.create');
 Route::post('/procurements/our', [MyProcurementController::class, 'store'])->name('procurements.our.store');
