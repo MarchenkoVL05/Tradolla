@@ -17,7 +17,7 @@
                 <template #title>Total sales:</template>
                 <template #amount>$270 000</template>
             </statistic-card>
-            <statistic-card class="col-span-6" :color="'orange'">
+            <statistic-card class="col-span-6" :color="'slate'">
                 <template #title>Your offers:</template>
                 <template #amount>$3 400 000</template>
             </statistic-card>
