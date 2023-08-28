@@ -6,6 +6,7 @@ use App\Http\Controllers\Catalog\CatalogController;
 use App\Http\Controllers\Catalog\MyCatalogController;
 use App\Http\Controllers\Procurement\ProcurementController;
 use App\Http\Controllers\Procurement\MyProcurementController;
+use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\OrderController;
 
 use Illuminate\Support\Facades\Route;
@@ -23,6 +24,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[MainController::class, 'index'])->name('dashboard');
+Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications');
 
 Route::get('/catalog',[CatalogController::class, 'index'])->name('catalog');
 Route::get('/catalog/our',[MyCatalogController::class, 'index'])->name('catalog.our.index');
