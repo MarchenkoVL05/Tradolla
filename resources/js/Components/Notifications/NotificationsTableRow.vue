@@ -36,9 +36,5 @@ export default {
     components: {
         Link,
     },
-
-    mounted() {
-        console.log(this.seen);
-    },
 };
 </script>

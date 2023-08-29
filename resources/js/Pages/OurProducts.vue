@@ -33,6 +33,7 @@ import MyProductTable from "../Components/Product/MyProductTable.vue";
 
 export default {
     components: {
+        PageHead,
         BaseLayout,
         Link,
         ButtonExportCsv,
