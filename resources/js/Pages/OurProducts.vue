@@ -1,4 +1,5 @@
 <template>
+    <page-head><title>Our products | Tradolla.com</title></page-head>
     <base-layout>
         <div class="mt-4 sm:mt-0 flex justify-between gap-2 flex-wrap">
             <button-export-csv></button-export-csv>
@@ -22,6 +23,7 @@
 </template>
 
 <script>
+import { Head as PageHead } from "@inertiajs/vue3";
 import BaseLayout from "../Layouts/BaseLayout.vue";
 import { Link } from "@inertiajs/vue3";
 import ButtonExportCsv from "../Components/Buttons/ButtonExportCsv.vue";
