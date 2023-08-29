@@ -7,17 +7,21 @@
             <div class="flex items-center gap-3">
                 <div
                     class="h-6 w-6 flex justify-center items-center border shadow rounded transition-all bg-white hover:border-orange-500"
+                    :class="{
+                        'border-orange-500': mode == 'list' || mode == null,
+                    }"
                 >
-                    <a href="./product-list.html"
-                        ><img class="h-4" src="/images/list.svg" alt=""
-                    /></a>
+                    <Link href="/catalog?mode=list">
+                        <img class="h-4" src="/images/list.svg" alt="" />
+                    </Link>
                 </div>
                 <div
                     class="h-6 w-6 flex justify-center items-center border shadow rounded transition-all bg-white hover:border-orange-500"
+                    :class="{ 'border-orange-500': mode == 'grid' }"
                 >
-                    <a href="./product-grid.html"
-                        ><img class="h-4" src="/images/grid.svg" alt=""
-                    /></a>
+                    <Link href="/catalog?mode=grid">
+                        <img class="h-4" src="/images/grid.svg" alt="" />
+                    </Link>
                 </div>
             </div>
             <span>Sort by:</span>
@@ -33,5 +37,13 @@
 </template>
 
 <script>
-export default {};
+import { Link } from "@inertiajs/vue3";
+
+export default {
+    components: {
+        Link,
+    },
+
+    props: ["mode"],
+};
 </script>

@@ -6,11 +6,11 @@
         <rating-stars :size="'big'"></rating-stars>
         <stock-info></stock-info>
 
-        <button-white>
+        <button-white class="py-3">
             <img src="/images/heart.svg" alt="" /> Favorite
         </button-white>
 
-        <button-orange>
+        <button-orange class="py-3">
             <img src="/images/contact_us.svg" alt="" /> Contact Us
         </button-orange>
     </div>
