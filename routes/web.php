@@ -7,6 +7,7 @@ use App\Http\Controllers\Catalog\OurCatalogController;
 use App\Http\Controllers\Procurement\ProcurementController;
 use App\Http\Controllers\Procurement\OurProcurementController;
 use App\Http\Controllers\NotificationController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\OrderController;
 
 use Illuminate\Support\Facades\Route;
@@ -36,3 +37,5 @@ Route::get("/procurements/orders", [OrderController::class, 'index'])->name('ord
 Route::get('/procurements/our',[OurProcurementController::class, 'index'])->name('procurements.our.index');
 Route::get('/procurements/our/create', [OurProcurementController::class, 'create'])->name('procurements.our.create');
 Route::post('/procurements/our', [OurProcurementController::class, 'store'])->name('procurements.our.store');
+
+Route::get('/companies',[CompanyController::class, 'index'])->name('companies');

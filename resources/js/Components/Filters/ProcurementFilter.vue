@@ -1,4 +1,5 @@
 <template>
+    <title-filter>Find your offer &#8595;</title-filter>
     <base-filter class="p-3">
         <form
             class="flex items-end justify-between flex-wrap md:flex-nowrap lg:flex-wrap xl:flex-nowrap gap-4 text-gray-500"
@@ -36,12 +37,14 @@
 </template>
 
 <script>
+import TitleFilter from "./TitleFilter.vue";
 import BaseFilter from "../Filters/BaseFilter.vue";
 import BaseInput from "../Inputs/BaseInput.vue";
 import ButtonBlack from "../Buttons/ButtonBlack.vue";
 
 export default {
     components: {
+        TitleFilter,
         BaseFilter,
         BaseInput,
         ButtonBlack,

@@ -1,7 +1,6 @@
 <template>
     <page-head><title>Procurements processes | Tradolla.com</title></page-head>
     <base-layout>
-        <title-filter>Find your offer &#8595;</title-filter>
         <procurement-filter></procurement-filter>
         <advanced-search></advanced-search>
         <procurement-table></procurement-table>

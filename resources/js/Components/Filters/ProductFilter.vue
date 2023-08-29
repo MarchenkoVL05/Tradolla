@@ -1,4 +1,5 @@
 <template>
+    <title-filter>Apply your filters &#8595;</title-filter>
     <base-filter>
         <form class="p-3 text-gray-800" action="">
             <div class="flex flex-col gap-3">
@@ -47,6 +48,7 @@
 </template>
 
 <script>
+import TitleFilter from "./TitleFilter.vue";
 import BaseFilter from "./BaseFilter.vue";
 import ButtonBlack from "../Buttons/ButtonBlack.vue";
 import BaseInput from "../Inputs/BaseInput.vue";
@@ -54,6 +56,7 @@ import LoopInput from "../Inputs/LoopInput.vue";
 
 export default {
     components: {
+        TitleFilter,
         BaseFilter,
         ButtonBlack,
         BaseInput,
