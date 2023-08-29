@@ -4,7 +4,7 @@
         <div class="w-full flex flex-col">
             <the-header></the-header>
             <main class="h-full p-3">
-                <div class="max-w-[1627px] mx-auto">
+                <div class="max-w-[1627px] mx-auto text-gray-800">
                     <slot></slot>
                 </div>
             </main>

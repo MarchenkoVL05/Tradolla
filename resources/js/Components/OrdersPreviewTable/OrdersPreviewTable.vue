@@ -9,11 +9,15 @@
             </Link>
         </div>
         <div class="mt-2 grid grid-cols-12 text-sm sm:text-base min-w-[686px]">
-            <div class="col-span-3 px-4 py-2 border-b font-semibold">Order</div>
-            <div class="col-span-7 px-4 py-2 border-b font-semibold">Offer</div>
-            <div class="col-span-2 px-4 py-2 border-b font-semibold">
-                Action
-            </div>
+            <table-head-cell-minimal class="col-span-3"
+                >Order</table-head-cell-minimal
+            >
+            <table-head-cell-minimal class="col-span-7"
+                >Offer</table-head-cell-minimal
+            >
+            <table-head-cell-minimal class="col-span-2"
+                >Action</table-head-cell-minimal
+            >
             <orders-preview-table-row></orders-preview-table-row>
         </div>
     </div>
@@ -22,11 +26,13 @@
 <script>
 import { Link } from "@inertiajs/vue3";
 import OrdersPreviewTableRow from "./OrdersPreviewTableRow.vue";
+import TableHeadCellMinimal from "../TableHeadCellMinimal.vue";
 
 export default {
     components: {
         Link,
         OrdersPreviewTableRow,
+        TableHeadCellMinimal,
     },
 };
 </script>

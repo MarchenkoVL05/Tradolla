@@ -2,7 +2,7 @@
     <div v-for="index in 10" :key="index" class="col-span-8 grid grid-cols-8">
         <div class="col-span-4 p-4" :class="{ 'bg-gray-50': index % 2 == 0 }">
             <div class="flex items-center gap-4">
-                <request-favorite></request-favorite>
+                <request-favorite :star="true"></request-favorite>
             </div>
             <procurement-list-title
                 >Construction Services for Office Expansion Project
@@ -18,12 +18,12 @@
         <span
             class="col-span-1 p-4 text-sm xl:text-base flex items-center"
             :class="{ 'bg-gray-50': index % 2 == 0 }"
-            >12/04/2023</span
+            >12 april 2023</span
         >
         <span
             class="col-span-1 p-4 text-sm xl:text-base flex items-center"
             :class="{ 'bg-gray-50': index % 2 == 0 }"
-            >31/12/2023</span
+            >31 december 2023</span
         >
     </div>
 </template>
@@ -32,6 +32,7 @@
 import ProcurementListCategoryAndRegion from "./ProcurementListCategoryAndRegion.vue";
 import ProcurementListTitle from "../Procurement/ProcurementListTitle.vue";
 import RequestFavorite from "../RequestFavorite.vue";
+
 export default {
     components: {
         ProcurementListCategoryAndRegion,

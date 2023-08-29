@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center gap-2 text-gray-400">
-        <button @click="addRequestToFavorite">
+        <button v-if="star" @click="addRequestToFavorite">
             <img
                 class="h-4"
                 :src="
@@ -17,6 +17,8 @@
 
 <script>
 export default {
+    props: ["star"],
+
     data() {
         return {
             requestAdded: false,
