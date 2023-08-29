@@ -6,14 +6,14 @@
         <div class="flex items-center flex-wrap gap-3">
             <div class="flex items-center gap-3">
                 <div
-                    class="h-6 w-6 flex justify-center items-center border shadow rounded bg-white"
+                    class="h-6 w-6 flex justify-center items-center border shadow rounded transition-all bg-white hover:border-orange-500"
                 >
                     <a href="./product-list.html"
                         ><img class="h-4" src="/images/list.svg" alt=""
                     /></a>
                 </div>
                 <div
-                    class="h-6 w-6 flex justify-center items-center border shadow rounded bg-white"
+                    class="h-6 w-6 flex justify-center items-center border shadow rounded transition-all bg-white hover:border-orange-500"
                 >
                     <a href="./product-grid.html"
                         ><img class="h-4" src="/images/grid.svg" alt=""

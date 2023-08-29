@@ -1,25 +1,25 @@
 <?php
 
-namespace App\Http\Controllers\Procurement;
+namespace App\Http\Controllers\Catalog;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 
-class MyProcurementController extends Controller
+class OurCatalogController extends Controller
 {
     public function index() 
     {
-        return Inertia::render('OurOffers');
+        return Inertia::render('OurProducts');
     }
 
     public function create() 
     {
-        echo 'Create procurement form';
+        echo 'Create product form';
     }
 
     public function store() 
     {
-        echo 'procurement created';
+        echo 'product created';
     }
 }

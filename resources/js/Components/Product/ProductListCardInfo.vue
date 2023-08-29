@@ -3,7 +3,7 @@
         class="flex flex-col gap-2 flex-shrink-0 rounded bg-white md:gap-0 md:justify-between md:w-64 md:h-64 md:p-5 md:border"
     >
         <product-price>799</product-price>
-        <rating-stars></rating-stars>
+        <rating-stars :size="'big'"></rating-stars>
         <stock-info></stock-info>
 
         <button-white>
