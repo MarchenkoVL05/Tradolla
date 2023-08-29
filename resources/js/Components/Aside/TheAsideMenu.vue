@@ -25,7 +25,11 @@
                 <Link
                     v-if="menu.isOpen"
                     class="text-sm sm:text-base transition-all hover:text-orange-400"
-                    :class="{ 'text-orange-400': $page.url === link.url }"
+                    :class="{
+                        'text-orange-400': new RegExp(
+                            `^${link.url}(\\?|$)`
+                        ).test($page.url),
+                    }"
                     :href="link.url"
                 >
                     {{ link.name }}
