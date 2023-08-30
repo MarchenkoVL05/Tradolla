@@ -100,7 +100,7 @@
                     <base-input value="www.cht.com.tw"></base-input>
                 </div>
                 <div class="p-4 flex justify-end">
-                    <button-orange class="w-auto px-4 py-1">Save</button-orange>
+                    <button-orange class="px-4 py-1">Save</button-orange>
                 </div>
             </template>
         </form-box>

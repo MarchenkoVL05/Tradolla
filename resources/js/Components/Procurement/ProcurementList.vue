@@ -1,5 +1,9 @@
 <template>
-    <div v-for="index in 10" :key="index" class="col-span-8 grid grid-cols-8">
+    <div
+        v-for="index in 10"
+        :key="index"
+        class="col-span-8 grid grid-cols-8 border-b transition-all border-gray-200 hover:border-orange-300"
+    >
         <div class="col-span-4 p-4" :class="{ 'bg-gray-50': index % 2 == 0 }">
             <div class="flex items-center gap-4">
                 <request-favorite :star="true"></request-favorite>
