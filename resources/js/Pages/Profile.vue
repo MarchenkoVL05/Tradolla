@@ -8,7 +8,9 @@
                 <tab name="User account">
                     <profile-user-about-tab></profile-user-about-tab>
                 </tab>
-                <tab name="Company profile"></tab>
+                <tab name="Company profile">
+                    <profile-company-tab></profile-company-tab>
+                </tab>
             </tabs>
         </div>
     </base-layout>
@@ -19,6 +21,7 @@ import { Head as PageHead } from "@inertiajs/vue3";
 import { Tabs, Tab } from "vue3-tabs-component";
 import BaseLayout from "../Layouts/BaseLayout.vue";
 import ProfileUserAboutTab from "../Components/Profile/ProfileUserAboutTab.vue";
+import ProfileCompanyTab from "../Components/Profile/ProfileCompanyTab.vue";
 
 export default {
     components: {
@@ -27,6 +30,7 @@ export default {
         Tab,
         BaseLayout,
         ProfileUserAboutTab,
+        ProfileCompanyTab,
     },
 };
 </script>
