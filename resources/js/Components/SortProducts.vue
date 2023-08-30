@@ -5,24 +5,22 @@
         <div class="font-medium">Showing 1-24 of 205 Products</div>
         <div class="flex items-center flex-wrap gap-3">
             <div class="flex items-center gap-3">
-                <div
+                <Link
+                    href="/catalog?mode=list"
                     class="h-6 w-6 flex justify-center items-center border shadow rounded transition-all bg-white hover:border-orange-500"
                     :class="{
                         'border-orange-500': mode == 'list' || mode == null,
                     }"
                 >
-                    <Link href="/catalog?mode=list">
-                        <img class="h-4" src="/images/list.svg" alt="" />
-                    </Link>
-                </div>
-                <div
+                    <img class="h-4" src="/images/list.svg" alt="" />
+                </Link>
+                <Link
+                    href="/catalog?mode=grid"
                     class="h-6 w-6 flex justify-center items-center border shadow rounded transition-all bg-white hover:border-orange-500"
                     :class="{ 'border-orange-500': mode == 'grid' }"
                 >
-                    <Link href="/catalog?mode=grid">
-                        <img class="h-4" src="/images/grid.svg" alt="" />
-                    </Link>
-                </div>
+                    <img class="h-4" src="/images/grid.svg" alt="" />
+                </Link>
             </div>
             <span>Sort by:</span>
             <select

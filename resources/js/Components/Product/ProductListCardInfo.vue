@@ -6,8 +6,14 @@
         <rating-stars :size="'big'"></rating-stars>
         <stock-info></stock-info>
 
-        <button-white class="py-3">
-            <img src="/images/heart.svg" alt="" /> Favorite
+        <button-white class="py-3" @click="addToFavorite">
+            <img
+                :src="
+                    addedToFav ? '/images/heart--fill.svg' : '/images/heart.svg'
+                "
+                alt=""
+            />
+            Favorite
         </button-white>
 
         <button-orange class="py-3">
@@ -30,6 +36,16 @@ export default {
         StockInfo,
         RatingStars,
         ProductPrice,
+    },
+    data() {
+        return {
+            addedToFav: false,
+        };
+    },
+    methods: {
+        addToFavorite() {
+            this.addedToFav = !this.addedToFav;
+        },
     },
 };
 </script>

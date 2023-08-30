@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-2 flex flex-col rounded shadow border bg-white">
+    <div class="flex flex-col rounded shadow border bg-white">
         <div
             class="p-4 flex justify-between flex-wrap gap-2 border-b rounded-t-lg text-gray-800 bg-gray-50"
         >

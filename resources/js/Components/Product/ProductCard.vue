@@ -42,8 +42,16 @@
                             alt=""
                         />
                     </button-orange>
-                    <button-white class="p-2">
-                        <img class="w-5 h-5" src="/images/heart.svg" alt="" />
+                    <button-white class="p-2" @click="addToFavorite">
+                        <img
+                            class="w-5 h-5"
+                            :src="
+                                addedToFav
+                                    ? '/images/heart--fill.svg'
+                                    : '/images/heart.svg'
+                            "
+                            alt=""
+                        />
                     </button-white>
                 </div>
             </div>
@@ -59,12 +67,23 @@ import ButtonOrange from "../Buttons/ButtonOrange.vue";
 import ButtonWhite from "../Buttons/ButtonWhite.vue";
 
 export default {
+    props: ["favorite"],
     components: {
         Link,
         RatingStars,
         StockInfo,
         ButtonOrange,
         ButtonWhite,
+    },
+    data() {
+        return {
+            addedToFav: false,
+        };
+    },
+    methods: {
+        addToFavorite() {
+            this.addedToFav = !this.addedToFav;
+        },
     },
 };
 </script>
