@@ -20,22 +20,21 @@
                 alt=""
             />
         </div>
-        <ul class="flex flex-col" :class="{ 'gap-3': menu.isOpen }">
-            <li v-for="(link, linkIndex) in menu.links" :key="linkIndex">
-                <Link
-                    v-if="menu.isOpen"
-                    class="text-sm sm:text-base transition-all hover:text-orange-400"
-                    :class="{
-                        'text-orange-400': new RegExp(
-                            `^${link.url}(\\?|$)`
-                        ).test($page.url),
-                    }"
-                    :href="link.url"
-                >
-                    {{ link.name }}
-                </Link>
-            </li>
-        </ul>
+        <div class="flex flex-col gap-3" v-if="menu.isOpen">
+            <Link
+                v-for="(link, linkIndex) in menu.links"
+                :key="linkIndex"
+                class="text-sm sm:text-base transition-all hover:text-orange-400"
+                :class="{
+                    'text-orange-400': new RegExp(`^${link.url}(\\?|$)`).test(
+                        $page.url
+                    ),
+                }"
+                :href="link.url"
+            >
+                {{ link.name }}
+            </Link>
+        </div>
     </div>
 </template>
 
