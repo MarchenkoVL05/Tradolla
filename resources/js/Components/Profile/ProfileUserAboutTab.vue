@@ -97,7 +97,7 @@
                     >
                         Reset
                     </button>
-                    <button-orange class="px-4 py-2"> Save </button-orange>
+                    <button-orange class="px-4 py-1"> Save </button-orange>
                 </div>
             </div>
         </div>
