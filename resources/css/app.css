@@ -49,6 +49,10 @@ a.is-active {
 /* End Tabs */
 
 /* Trix Editor */
+trix-editor {
+    min-height: 10rem;
+}
+
 trix-editor ul {
     list-style-type: disc !important;
     margin-left: 1rem !important;
