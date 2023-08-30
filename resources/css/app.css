@@ -21,6 +21,44 @@
     background: #49576d;
 }
 
+/* Tabs */
+.tabs-component {
+    margin-top: 0.5rem;
+}
+
+.tabs-component-tabs {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.tabs-component-tab-a {
+    font-weight: 600;
+    color: #1f2937;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+a.is-active {
+    color: #f97316;
+    border-bottom: 2px solid #f97316;
+}
+/* End Tabs */
+
+/* Trix Editor */
+trix-editor ul {
+    list-style-type: disc !important;
+    margin-left: 1rem !important;
+}
+trix-editor ol {
+    list-style-type: decimal !important;
+    margin-left: 1rem !important;
+}
+/* End Trix Editor */
+
 @layer components {
     .tooltip-triangle {
         @apply after:content-['']  after:absolute after:-bottom-2 after:left-2 after:w-0 after:h-0 after:border-l-[10px] after:border-l-transparent after:border-t-[10px] after:border-t-gray-800 after:border-r-[10px] after:border-r-transparent;

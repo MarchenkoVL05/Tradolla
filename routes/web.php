@@ -9,8 +9,8 @@ use App\Http\Controllers\Procurement\OurProcurementController;
 use App\Http\Controllers\NotificationController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\CompanyController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\OrderController;
-
 use Illuminate\Support\Facades\Route;
 
 
@@ -41,3 +41,5 @@ Route::get('/procurements/our/create', [OurProcurementController::class, 'create
 Route::post('/procurements/our', [OurProcurementController::class, 'store'])->name('procurements.our.store');
 
 Route::get('/companies',[CompanyController::class, 'index'])->name('companies');
+
+Route::get('/profile',[ProfileController::class, 'index'])->name('profile');
