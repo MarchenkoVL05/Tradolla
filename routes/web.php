@@ -39,6 +39,7 @@ Route::get("/procurements/orders", [OrderController::class, 'index'])->name('ord
 Route::get('/procurements/our',[OurProcurementController::class, 'index'])->name('procurements.our.index');
 Route::get('/procurements/our/create', [OurProcurementController::class, 'create'])->name('procurements.our.create');
 Route::post('/procurements/our', [OurProcurementController::class, 'store'])->name('procurements.our.store');
+Route::get("/procurements/{offer}", [ProcurementController::class, 'show'])->name('procurements.show');
 
 Route::get('/companies',[CompanyController::class, 'index'])->name('companies');
 

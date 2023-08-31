@@ -6,11 +6,6 @@
         <slot></slot>
         <div v-if="filter" class="flex flex-col">
             <button
-                class="flex items-end text-[12px] text-gray-800 hover:text-orange-500"
-            >
-                &#9650;
-            </button>
-            <button
                 class="flex items-start text-[12px] text-gray-800 hover:text-orange-500"
             >
                 &#9660;

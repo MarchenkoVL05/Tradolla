@@ -12,4 +12,9 @@ class ProcurementController extends Controller
     {
         return Inertia::render('Offers');
     }
+
+    public function show()
+    {
+        return Inertia::render('OfferDetails');
+    }
 }
