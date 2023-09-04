@@ -1,6 +1,9 @@
 <template>
-    <div class="flex items-center gap-2 text-gray-400">
-        <button v-if="star" @click="addRequestToFavorite">
+    <div
+        @click="addRequestToFavorite"
+        class="flex items-center gap-2 cursor-pointer text-gray-400"
+    >
+        <button v-if="star">
             <img
                 class="h-4"
                 :src="

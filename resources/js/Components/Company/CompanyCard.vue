@@ -1,7 +1,7 @@
 <template>
-    <a
+    <Link
         class="group flex flex-col justify-between items-center gap-4 p-5 border rounded shadow hover:shadow-none"
-        href="#"
+        href="/companies/1"
     >
         <img
             class="h-16 sm:h-20 w-full object-contain"
@@ -21,11 +21,17 @@
                 Registered: <span class="font-semibold">6 years</span>
             </div>
         </div>
-    </a>
+    </Link>
 </template>
 
 <script>
+import { Link } from "@inertiajs/vue3";
+
 export default {
     props: ["index"],
+
+    components: {
+        Link,
+    },
 };
 </script>

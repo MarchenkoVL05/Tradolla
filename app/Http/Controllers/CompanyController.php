@@ -11,4 +11,9 @@ class CompanyController extends Controller
     {
         return Inertia::render('Companies');
     }
+
+    public function show()
+    {
+        return Inertia::render('CompanyDetails');
+    }
 }

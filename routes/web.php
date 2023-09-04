@@ -44,5 +44,6 @@ Route::get("/procurements/{offer}", [ProcurementController::class, 'show'])->nam
 Route::get("/procurements/{offer}/create", [OrderController::class, 'create'])->name('orders.create');
 
 Route::get('/companies',[CompanyController::class, 'index'])->name('companies');
+Route::get('/companies/{company}',[CompanyController::class, 'show'])->name('companies.show');
 
 Route::get('/profile',[ProfileController::class, 'index'])->name('profile');
