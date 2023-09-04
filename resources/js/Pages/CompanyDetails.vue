@@ -1,5 +1,5 @@
 <template>
-    <page-head>Company | Tradolla.com</page-head>
+    <page-head><title>Company | Tradolla.com</title></page-head>
     <base-layout>
         <div class="grid grid-cols-1 2xl:grid-cols-9 gap-3 xl">
             <div
