@@ -12,4 +12,9 @@ class CatalogController extends Controller
     {
         return Inertia::render('Catalog');
     }
+
+    public function show()
+    {
+        return Inertia::render('ProductDetails');
+    }
 }

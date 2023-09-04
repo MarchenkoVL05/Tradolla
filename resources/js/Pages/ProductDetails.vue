@@ -1,0 +1,443 @@
+<template>
+    <page-head><title>Product | Tradolla.com</title></page-head>
+    <base-layout>
+        <div class="flex gap-3 pb-2 flex-col 2xl:flex-row">
+            <div class="max-w-7xl rounded p-4 border bg-white">
+                <div class="flex gap-4 flex-col min-[1368px]:flex-row">
+                    <div class="flex flex-col gap-1 w-full">
+                        <img
+                            class="bg-gray-50 border w-full max-h-80 min-[1368px]:h-80 object-contain rounded cursor-pointer"
+                            src="/images/example-3.jpg"
+                            alt=""
+                        />
+                        <div class="flex items-center gap-1 overflow-x-hidden">
+                            <img
+                                class="max-h-12 sm:max-h-16 rounded cursor-pointer"
+                                src="/images/example-1.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-12 sm:max-h-16 rounded cursor-pointer"
+                                src="/images/example-2.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-12 sm:max-h-16 rounded cursor-pointer"
+                                src="/images/example-3.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-12 sm:max-h-16 rounded cursor-pointer"
+                                src="/images/example-1.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-12 sm:max-h-16 rounded cursor-pointer"
+                                src="/images/example-2.jpg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-12 sm:max-h-16 rounded cursor-pointer"
+                                src="/images/example-3.jpg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <div
+                            class="text-lg sm:text-xl text-gray-800 font-medium"
+                        >
+                            Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz
+                            6-Core Intel Core i7, 16GB RAM, 256GB SSD) - Space
+                            Gray (Latest Model)
+                        </div>
+                        <div
+                            class="mt-2 items-center flex-wrap gap-2 text-orange-500"
+                        >
+                            <a href="#"> apple </a>
+                            &
+                            <a href="#"> laptop </a>
+                            &
+                            <a href="#"> iMac </a>
+                        </div>
+                        <div class="mt-2 flex items-center gap-1">
+                            <img
+                                class="max-h-4 md:max-h-5"
+                                src="/images/star--fill.svg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-4 md:max-h-5"
+                                src="/images/star--fill.svg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-4 md:max-h-5"
+                                src="/images/star--fill.svg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-4 md:max-h-5"
+                                src="/images/star--fill.svg"
+                                alt=""
+                            />
+                            <img
+                                class="max-h-4 md:max-h-5"
+                                src="/images/star.svg"
+                                alt=""
+                            />
+                            <span class="text-slate-800">(8)</span>
+                        </div>
+                        <div class="mt-2 sm:mt-4 text-gray-500">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Asperiores doloremque, consequuntur iusto
+                            alias illum voluptates non harum. Aspernatur earum
+                            alias illo blanditiis provident corrupti similique
+                            illum omnis sit, quisquam facere.
+                        </div>
+                        <del class="block mt-2 sm:mt-4 text-xl text-slate-600"
+                            >$1300</del
+                        >
+                        <div class="text-2xl text-slate-800">
+                            $<span>1199.5</span>
+                        </div>
+                        <div class="mt-2 sm:mt-4 text-gray-800">
+                            Stock: <span class="text-green-600">Avaliable</span>
+                        </div>
+                        <div
+                            class="mt-4 flex items-center flex-wrap gap-2 sm:gap-4"
+                        >
+                            <button
+                                class="py-3 px-6 flex justify-center items-center gap-2 rounded transition-all cursor-pointer text-orange-500 bg-white border border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                            >
+                                <img src="/images/heart.svg" alt="" /> Favorite
+                            </button>
+                            <button
+                                class="py-3 px-6 flex justify-center items-center gap-2 rounded transition-all cursor-pointer text-white bg-orange-500 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                            >
+                                <img src="/images/contact_us.svg" alt="" />
+                                Contact Us
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="mt-4 flex flex-wrap font-semibold sm:border-b sm:border-gray-200"
+                >
+                    <div
+                        class="px-3 py-2 cursor-pointer border-b-2 text-orange-500 border-orange-500"
+                    >
+                        Description
+                    </div>
+                    <div class="px-3 py-2 cursor-pointer">Specifications</div>
+                    <div class="px-3 py-2 cursor-pointer">Reviews</div>
+                </div>
+                <p class="mt-4 pb-4 sm:text-lg text-gray-600">
+                    Over the years, Apple has built a reputation for releasing
+                    its products with a lot of fanfare – but that didn’t exactly
+                    happen for the MacBook Pro 2018. Rather, Apple’s latest pro
+                    laptop experienced a subdued launch, in spite of it offering
+                    a notable spec upgrade over the 2017 model – along with an
+                    improved keyboard. And, as with previous generations the
+                    15-inch MacBook Pro arrives alongside a 13-inch model. Apple
+                    still loves the MacBook Pro though, despite the quiet
+                    release. This is because, while the iPhone XS and iPad,
+                    along with the 12-inch MacBook, are aimed at everyday
+                    consumers, the MacBook Pro has always aimed at the creative
+                    and professional audience. This new MacBook Pro brings a
+                    level of performance (and price) unlike its more
+                    consumer-oriented devices. Still, Apple wants mainstream
+                    users to buy the MacBook Pro, too. So, if you’re just
+                    looking for the most powerful MacBook on the market, you’ll
+                    love this new MacBook Pro. Just keep in mind that, while the
+                    keyboard has been updated, there are still some issues with
+                    it. There’s enough of a difference between the two sizes
+                    when it comes to performance to warrant two separate
+                    reviews, and here we’ll be looking at how the flagship
+                    15-inch MacBook Pro performs in 2019. It's build quality and
+                    design is batter than elit. Numquam excepturi a debitis,
+                    sint voluptates, nam odit vel delectus id repellendus vero
+                    reprehenderit quidem totam praesentium vitae nesciunt
+                    deserunt. Sint, veniam?
+                </p>
+                <div class="mt-4 text-sm text-gray-600 sm:text-base hidden">
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">
+                            Processor
+                        </div>
+                        <div class="px-4 py-2 border-b">
+                            2.3GHz quad-core Intel Core i5
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">Memory</div>
+                        <div class="px-4 py-2 border-b">
+                            8GB of 2133MHz LPDDR3 onboard memory
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">
+                            Brand Name
+                        </div>
+                        <div class="px-4 py-2 border-b">Apple</div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">Model</div>
+                        <div class="px-4 py-2 border-b">Mac Book Pro</div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">
+                            Display
+                        </div>
+                        <div class="px-4 py-2 border-b">
+                            13.3-inch (diagonal) LED-backlit display with IPS
+                            technology
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">
+                            Storage
+                        </div>
+                        <div class="px-4 py-2 border-b">512GB SSD</div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">
+                            Graphics
+                        </div>
+                        <div class="px-4 py-2 border-b">
+                            Intel Iris Plus Graphics 655
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">Weight</div>
+                        <div class="px-4 py-2 border-b">7.15 pounds</div>
+                    </div>
+                    <div class="grid grid-cols-2 text-gray-600">
+                        <div class="px-4 py-2 border-b bg-gray-100">Finish</div>
+                        <div class="px-4 py-2 border-b">Silver, Space Gray</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-sm sm:text-base hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8">
+                        <div class="flex flex-col gap-4">
+                            <div class="pb-4 border-b">
+                                <div class="flex gap-2">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star--fill.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star--fill.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star--fill.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star--fill.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="font-semibold">
+                                        by Drik Smith
+                                    </div>
+                                </div>
+                                <span class="block mt-1 text-sm text-gray-500"
+                                    >October 14, 2019</span
+                                >
+                                <p class="mt-4 text-gray-600">
+                                    You shouldn't need to read a review to see
+                                    how nice and polished this theme is. So I'll
+                                    tell you something you won't find in the
+                                    demo. After the download I had a technical
+                                    question, emailed the team and got a
+                                    response right from the team CEO with
+                                    helpful advice.
+                                </p>
+                            </div>
+                            <div class="pb-4 border-b">
+                                <div class="flex gap-2">
+                                    <div class="flex items-center gap-1">
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star--fill.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star--fill.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star.svg"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="block h-5"
+                                            src="/images/star.svg"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <div class="font-semibold">
+                                        by Pedro Mascal
+                                    </div>
+                                </div>
+                                <span class="block mt-1 text-sm text-gray-500"
+                                    >October 14, 2019</span
+                                >
+                                <p class="mt-4 text-gray-600">
+                                    This really is an amazing template - from
+                                    the style to the font - clean layout. SO
+                                    worth the money! The demo pages show off
+                                    what Bootstrap 4 can impressively do. Great
+                                    template!! Support response is FAST and the
+                                    team is amazing - communication is
+                                    important.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="text-lg sm:text-xl font-semibold text-gray-800"
+                            >
+                                Write your Review
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <span class="mt-2 sm:mt-4 text-lg text-gray-600"
+                                    >Rating:</span
+                                >
+                                <div class="flex items-center gap-2">
+                                    <img
+                                        class="h-5 sm:h-7 cursor-pointer"
+                                        src="/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="h-5 sm:h-7 cursor-pointer"
+                                        src="/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="h-5 sm:h-7 cursor-pointer"
+                                        src="/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="h-5 sm:h-7 cursor-pointer"
+                                        src="/images/star.svg"
+                                        alt=""
+                                    />
+                                    <img
+                                        class="h-5 sm:h-7 cursor-pointer"
+                                        src="/images/star.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                            <form
+                                class="mt-4 flex flex-col gap-2 sm:gap-4 text-gray-600"
+                                action=""
+                            >
+                                <label class="flex flex-col gap-2">
+                                    Name:
+                                    <input
+                                        class="p-2 border rounded focus:outline-none focus:border-orange-600"
+                                        type="text"
+                                    />
+                                </label>
+                                <label class="flex flex-col gap-2">
+                                    Email:
+                                    <input
+                                        class="p-2 border rounded focus:outline-none focus:border-orange-600"
+                                        type="text"
+                                    />
+                                </label>
+                                <label class="flex flex-col gap-2">
+                                    Review:
+                                    <textarea
+                                        class="p-2 border rounded focus:outline-none focus:border-orange-600"
+                                    ></textarea>
+                                </label>
+                                <button
+                                    class="py-3 px-4 max-w-xs flex justify-center items-center transition-all rounded bg-orange-500 text-white font-semibold hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                                    type="submit"
+                                >
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-3 flex-col sm:flex-row 2xl:flex-col">
+                <div class="max-w-sm min-w-[220px] rounded border p-4 bg-white">
+                    <div class="font-semibold text-gray-800">Seller:</div>
+                    <span class="mt-1 flex items-center gap-2 text-orange-500"
+                        ><img
+                            class="max-h-6"
+                            src="/images/verified.svg"
+                            alt=""
+                        />
+                        verified supplier</span
+                    >
+                    <a
+                        class="block mt-1 font-semibold text-blue-600 hover:underline"
+                        href="./company.html"
+                        >LLC 'VIATSKY PLYWOOD COMBINATE'</a
+                    >
+                    <div class="text-gray-500">Russia</div>
+                    <div class="mt-4 text-gray-800">
+                        Registered:
+                        <span class="font-semibold">6 years 11 months</span>
+                    </div>
+                </div>
+                <div
+                    class="2xl:h-full w-full 2xl:max-w-sm min-w-[220px] rounded border p-4 bg-white"
+                >
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5620249215126!2d58.49017452510491!3d51.22714340599063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x417ffa30ce7e2269%3A0x679025c6b75b0fee!2z0YPQuy4g0JvQtdC90LjQvdGB0LrQvtCz0L4g0JrQvtC80YHQvtC80L7Qu9CwLCAxLCDQntGA0YHQuiwg0J7RgNC10L3QsdGD0YDQs9GB0LrQsNGPINC-0LHQuy4sIDQ2MjQyOA!5e0!3m2!1sru!2sru!4v1690259668591!5m2!1sru!2sru"
+                        width="100%"
+                        height="100%"
+                        allowfullscreen="true"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+            </div>
+        </div>
+    </base-layout>
+</template>
+
+<script>
+import { Head as PageHead } from "@inertiajs/vue3";
+import { Tabs, Tab } from "vue3-tabs-component";
+import { Link } from "@inertiajs/vue3";
+import BaseLayout from "../Layouts/BaseLayout.vue";
+
+export default {
+    components: {
+        PageHead,
+        Tabs,
+        Tab,
+        Link,
+        BaseLayout,
+    },
+};
+</script>

@@ -6,10 +6,7 @@
         <div
             class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8"
         >
-            <Link
-                class="relative min-[1368px]:flex-shrink-0"
-                href="./product-details.html"
-            >
+            <Link class="relative min-[1368px]:flex-shrink-0" href="/catalog/1">
                 <img
                     class="rounded object-contain w-full max-h-44 sm:max-h-80 bg-gray-50 border min-[1368px]:w-[366px] min-[1368px]:h-60"
                     src="/images/example-1.jpg"

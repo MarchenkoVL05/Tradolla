@@ -33,6 +33,7 @@ Route::get('/catalog',[CatalogController::class, 'index'])->name('catalog');
 Route::get('/catalog/our',[OurCatalogController::class, 'index'])->name('catalog.our.index');
 Route::get('/catalog/our/create', [OurCatalogController::class, 'create'])->name('catalog.our.create');
 Route::post('/catalog/our', [OurCatalogController::class, 'store'])->name('catalog.our.store');
+Route::get('/catalog/{product}',[CatalogController::class, 'show'])->name('catalog.show');
 
 Route::get("/procurements", [ProcurementController::class, 'index'])->name('procurements');
 Route::get("/procurements/orders", [OrderController::class, 'index'])->name('orders');

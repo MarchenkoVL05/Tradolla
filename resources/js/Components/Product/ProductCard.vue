@@ -3,7 +3,7 @@
         class="flex flex-col justify-between mx-auto min-[1120px]:mx-0 min-[1370px]:max-w-xs h-full rounded shadow text-gray-500 bg-white"
     >
         <div>
-            <Link class="relative" href="#">
+            <Link class="relative" href="/catalog/1">
                 <img
                     class="w-full max-h-52 object-contain rounded-t bg-gray-50"
                     src="/images/example-3.jpg"
@@ -13,12 +13,12 @@
             <div class="p-2">
                 <Link
                     class="inline-block text-sm uppercase hover:underline"
-                    href="#"
+                    href="/companies/1"
                     >Fubon Financial Holding Co. Ltd</Link
                 >
                 <Link
                     class="inline-block text-base font-semibold text-gray-800 hover:underline"
-                    href="#"
+                    href="/catalog/1"
                     >Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core
                     Intel Core i7, 16GB RAM, 256GB SSD) - Space Gray (Latest
                     Model)

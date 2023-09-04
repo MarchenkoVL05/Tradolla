@@ -4,7 +4,7 @@
         :class="{ 'bg-gray-50': index % 2 == 0 }"
     >
         <div class="col-span-6 px-4 py-2 flex items-center gap-4">
-            <a class="flex-shrink-0" href="./product-details.html">
+            <a class="flex-shrink-0" href="/catalog/1">
                 <img
                     class="w-24 h-24 rounded object-contain"
                     src="/images/example-3.jpg"
@@ -16,7 +16,7 @@
                 <div class="flex flex-col gap-3">
                     <a
                         class="text-gray-800 font-medium hover:underline"
-                        href="./product-details.html"
+                        href="/catalog/1"
                         >Apple MacBook Pro (15" Retina, Touch Bar, 2.2GHz 6-Core
                         Intel Core i7, 16GB RAM, 256GB SSD) - Space Gray (Latest
                         Model)
