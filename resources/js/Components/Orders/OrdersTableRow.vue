@@ -3,7 +3,7 @@
         class="px-4 py-2 text-sm flex flex-col border-b"
         :class="{ 'bg-gray-50': index % 2 == 0 }"
     >
-        <Link href="./order-details.html" class="font-medium hover:underline"
+        <Link href="/procurements/orders/1" class="font-medium hover:underline"
             ><span class="sm:text-lg text-blue-500">#{{ index }}</span> by Ricky
             Antony</Link
         >
@@ -23,7 +23,7 @@
     <Link
         class="px-4 py-2 text-sm flex items-center border-b font-medium hover:underline"
         :class="{ 'bg-gray-50': index % 2 == 0 }"
-        href="./offer-details.html"
+        href="/procurements/1"
         >Construction Services for Office Expansion Project
     </Link>
     <button

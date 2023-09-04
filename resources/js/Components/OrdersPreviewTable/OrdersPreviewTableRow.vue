@@ -11,11 +11,15 @@
                 >Segezha Group
             </Link>
         </div>
-        <Link class="col-span-7 p-4 font-medium hover:underline" href="#"
+        <Link
+            class="col-span-7 p-4 font-medium hover:underline"
+            href="/procurements/1"
             >Construction Services for Office Expansion Project
         </Link>
         <div class="col-span-2 p-4">
-            <Link class="text-orange-500 hover:underline" href="#"
+            <Link
+                class="text-orange-500 hover:underline"
+                href="/procurements/orders/1"
                 >Open order
             </Link>
         </div>

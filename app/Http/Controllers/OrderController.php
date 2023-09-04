@@ -12,6 +12,11 @@ class OrderController extends Controller
         return Inertia::render('Orders');
     }
 
+    public function show()
+    {
+        return Inertia::render('OrderDetails');
+    }
+
     public function create() 
     {
         return Inertia::render('RespondToPosting');

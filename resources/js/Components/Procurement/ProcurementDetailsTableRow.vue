@@ -3,8 +3,11 @@
         class="col-span-5 grid grid-cols-5"
         :class="{ 'bg-gray-100': index % 2 == 0 }"
     >
-        <label class="flex items-center gap-2 p-2 border border-gray-100"
+        <label
+            class="flex items-center gap-2 p-2 border border-gray-100"
+            :class="{ 'px-4': selected == 'hidden' }"
             ><input
+                v-if="selected === false || selected === true"
                 class="w-4 h-4 flex-shrink-0"
                 type="checkbox"
                 :checked="selected"
