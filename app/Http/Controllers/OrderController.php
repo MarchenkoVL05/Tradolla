@@ -11,4 +11,9 @@ class OrderController extends Controller
     {
         return Inertia::render('Orders');
     }
+
+    public function create() 
+    {
+        return Inertia::render('RespondToPosting');
+    }
 }

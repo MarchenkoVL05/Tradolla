@@ -44,7 +44,7 @@
         </div>
         <Link
             class="inline-block mt-6 py-3 px-6 transition-all rounded bg-orange-500 text-white font-semibold hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
-            href="./respond-to-posting.html"
+            href="/procurements/1/create"
             >Respond to posting</Link
         >
         <div class="mt-4 font-medium">
