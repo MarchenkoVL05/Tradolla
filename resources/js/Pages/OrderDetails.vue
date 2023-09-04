@@ -48,7 +48,7 @@
 
 <script>
 import { Head as PageHead } from "@inertiajs/vue3";
-import Link from "@inertiajs/vue3";
+import { Link } from "@inertiajs/vue3";
 import BaseLayout from "../Layouts/BaseLayout.vue";
 import FormBox from "../Components/Forms/FormBox.vue";
 import ProcurementDetailsTable from "../Components/Procurement/ProcurementDetailsTable.vue";
