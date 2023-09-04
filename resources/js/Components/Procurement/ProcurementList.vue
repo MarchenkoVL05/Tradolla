@@ -16,11 +16,11 @@
             </procurement-list-title>
             <procurement-list-category-and-region></procurement-list-category-and-region>
         </div>
-        <a
+        <Link
             class="col-span-2 flex items-center p-4 text-blue-500 hover:text-slate-800"
             :class="{ 'bg-gray-50': index % 2 == 0 }"
-            href="./company.html"
-            >Chunghwa Telecom Ltd.</a
+            href="/companies/1"
+            >Chunghwa Telecom Ltd.</Link
         >
         <span
             class="col-span-1 p-4 text-sm xl:text-base flex items-center"
@@ -36,12 +36,14 @@
 </template>
 
 <script>
+import { Link } from "@inertiajs/vue3";
 import ProcurementListCategoryAndRegion from "./ProcurementListCategoryAndRegion.vue";
 import ProcurementListTitle from "../Procurement/ProcurementListTitle.vue";
 import RequestFavorite from "../RequestFavorite.vue";
 
 export default {
     components: {
+        Link,
         ProcurementListCategoryAndRegion,
         ProcurementListTitle,
         RequestFavorite,

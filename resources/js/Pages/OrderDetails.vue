@@ -8,10 +8,10 @@
                     ><div class="px-4 py-2 flex flex-col gap-3">
                         <div>
                             Company:
-                            <a
+                            <Link
                                 class="text-blue-500 hover:underline"
-                                href="./company.html"
-                                >Chunghwa Telecom Ltd. (view profile)</a
+                                href="/companies/1"
+                                >Chunghwa Telecom Ltd. (view profile)</Link
                             >
                         </div>
                         <company-info-table></company-info-table>
@@ -48,6 +48,7 @@
 
 <script>
 import { Head as PageHead } from "@inertiajs/vue3";
+import Link from "@inertiajs/vue3";
 import BaseLayout from "../Layouts/BaseLayout.vue";
 import FormBox from "../Components/Forms/FormBox.vue";
 import ProcurementDetailsTable from "../Components/Procurement/ProcurementDetailsTable.vue";
@@ -56,6 +57,7 @@ import CompanyInfoTable from "../Components/Company/CompanyInfoTable.vue";
 export default {
     components: {
         PageHead,
+        Link,
         BaseLayout,
         FormBox,
         ProcurementDetailsTable,

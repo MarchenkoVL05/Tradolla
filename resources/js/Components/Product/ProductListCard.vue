@@ -6,7 +6,7 @@
         <div
             class="flex flex-col gap-4 min-[1368px]:flex-row min-[1368px]:gap-8"
         >
-            <a
+            <Link
                 class="relative min-[1368px]:flex-shrink-0"
                 href="./product-details.html"
             >
@@ -16,12 +16,12 @@
                     alt=""
                 />
                 <new-badge v-if="index % 2"></new-badge>
-            </a>
+            </Link>
             <div>
-                <a
+                <Link
                     class="block uppercase text-sm lg:text-base text-gray-800 hover:underline"
-                    href="./company.html"
-                    >LLC 'VIATSKY PLYWOOD COMBINATE'</a
+                    href="/companies/1"
+                    >LLC 'VIATSKY PLYWOOD COMBINATE'</Link
                 >
                 <product-title
                     >Apple iMac Pro (27-inch with Retina 5K Display, 3.0GHz
@@ -42,6 +42,7 @@
 </template>
 
 <script>
+import { Link } from "@inertiajs/vue3";
 import ProductListCardInfo from "./ProductListCardInfo.vue";
 import NewBadge from "../NewBadge.vue";
 import ProductTitle from "./ProductTitle.vue";
@@ -52,6 +53,7 @@ export default {
     props: ["index"],
 
     components: {
+        Link,
         ProductListCardInfo,
         NewBadge,
         ProductTitle,
