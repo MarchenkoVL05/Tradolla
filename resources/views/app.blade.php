@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/vue-select@latest/dist/vue-select.css">
     <link type="image/png" sizes="32x32" rel="icon" href="/images/favicon.png">
     {{-- Trix Editor --}}
     <link

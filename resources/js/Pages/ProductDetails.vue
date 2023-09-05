@@ -30,8 +30,19 @@
                         <div
                             class="mt-4 flex items-center flex-wrap gap-2 sm:gap-4"
                         >
-                            <button-white class="py-3 px-6">
-                                <img src="/images/heart.svg" alt="" /> Favorite
+                            <button-white
+                                class="py-3 px-6"
+                                @click="addToFavorite"
+                            >
+                                <img
+                                    :src="
+                                        addedToFav
+                                            ? '/images/heart--fill.svg'
+                                            : '/images/heart.svg'
+                                    "
+                                    alt=""
+                                />
+                                Favorite
                             </button-white>
                             <button-orange class="py-3 px-6">
                                 <img src="/images/contact_us.svg" alt="" />
@@ -141,6 +152,18 @@ export default {
         CommentWithRating,
         ProductTags,
         ProductChooseImg,
+    },
+
+    data() {
+        return {
+            addedToFav: false,
+        };
+    },
+
+    methods: {
+        addToFavorite() {
+            this.addedToFav = !this.addedToFav;
+        },
     },
 };
 </script>

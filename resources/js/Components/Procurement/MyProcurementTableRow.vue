@@ -16,7 +16,7 @@
         <span
             class="p-4 xl:text-lg font-thin flex items-center text-green-500"
             :class="{ 'text-red-500': index == 5 || index == 7 }"
-            >{{ index == 5 || index == 7 ? "Opened" : "Closed" }}</span
+            >{{ index == 5 || index == 7 ? "Closed" : "Opened" }}</span
         >
         <div class="p-4 flex items-center gap-6">
             <action-btns></action-btns>

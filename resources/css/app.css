@@ -63,6 +63,21 @@ trix-editor ol {
 }
 /* End Trix Editor */
 
+/* Vue-select */
+:root {
+    /* Цвет иконки */
+    --vs-controls-color: #0f172a;
+    /* Цвет границы */
+    --vs-border-color: #e5e7eb;
+    /* Цвет заднего фона при hover на option */
+    --vs-dropdown-option--active-bg: #f97316;
+    /* Цвет текста при hover на option */
+    --vs-dropdown-option--active-color: #fff;
+    /* Размер иконки */
+    --vs-controls-size: 0.7;
+}
+/* End Vue-select */
+
 @layer components {
     .tooltip-triangle {
         @apply after:content-['']  after:absolute after:-bottom-2 after:left-2 after:w-0 after:h-0 after:border-l-[10px] after:border-l-transparent after:border-t-[10px] after:border-t-gray-800 after:border-r-[10px] after:border-r-transparent;

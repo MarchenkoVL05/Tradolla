@@ -15,7 +15,7 @@ class OurProcurementController extends Controller
 
     public function create() 
     {
-        echo 'Create procurement form';
+        return Inertia::render('CreateOffer');
     }
 
     public function store() 
