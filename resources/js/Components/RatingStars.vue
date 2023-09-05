@@ -1,56 +1,64 @@
 <template>
     <div class="flex items-center gap-1">
         <img
+            class="block"
             :class="{
-                'max-h-3': size == 'small',
-                'md:max-h-4': size == 'small',
-                'max-h-4': size !== 'small',
-                'md:max-h-5': size !== 'small',
+                'h-3': size == 'small',
+                'md:h-4': size == 'small',
+                'h-4': size !== 'small',
+                'md:h-5': size !== 'small',
             }"
             src="/images/star--fill.svg"
             alt=""
         />
         <img
+            class="block"
             :class="{
-                'max-h-3': size == 'small',
-                'md:max-h-4': size == 'small',
-                'max-h-4': size !== 'small',
-                'md:max-h-5': size !== 'small',
+                'h-3': size == 'small',
+                'md:h-4': size == 'small',
+                'h-4': size !== 'small',
+                'md:h-5': size !== 'small',
             }"
             src="/images/star--fill.svg"
             alt=""
         />
         <img
+            class="block"
             :class="{
-                'max-h-3': size == 'small',
-                'md:max-h-4': size == 'small',
-                'max-h-4': size !== 'small',
-                'md:max-h-5': size !== 'small',
+                'h-3': size == 'small',
+                'md:h-4': size == 'small',
+                'h-4': size !== 'small',
+                'md:h-5': size !== 'small',
             }"
             src="/images/star--fill.svg"
             alt=""
         />
         <img
+            class="block"
             :class="{
-                'max-h-3': size == 'small',
-                'md:max-h-4': size == 'small',
-                'max-h-4': size !== 'small',
-                'md:max-h-5': size !== 'small',
+                'h-3': size == 'small',
+                'md:h-4': size == 'small',
+                'h-4': size !== 'small',
+                'md:h-5': size !== 'small',
             }"
             src="/images/star--fill.svg"
             alt=""
         />
         <img
+            class="block"
             :class="{
-                'max-h-3': size == 'small',
-                'md:max-h-4': size == 'small',
-                'max-h-4': size !== 'small',
-                'md:max-h-5': size !== 'small',
+                'h-3': size == 'small',
+                'md:h-4': size == 'small',
+                'h-4': size !== 'small',
+                'md:h-5': size !== 'small',
             }"
             src="/images/star.svg"
             alt=""
         />
-        <span class="text-slate-800" :class="{ 'text-sm': size == 'small' }"
+        <span
+            v-if="counter"
+            class="text-slate-800"
+            :class="{ 'text-sm': size == 'small' }"
             >(8)</span
         >
     </div>
@@ -58,6 +66,15 @@
 
 <script>
 export default {
-    props: ["size"],
+    props: {
+        size: {
+            type: String,
+            default: "big",
+        },
+        counter: {
+            type: Boolean,
+            default: true,
+        },
+    },
 };
 </script>

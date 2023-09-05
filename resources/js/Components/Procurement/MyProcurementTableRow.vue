@@ -5,11 +5,11 @@
     >
         <div class="col-span-3 p-4">
             <request-favorite></request-favorite>
-            <a
+            <Link
                 class="inline-block font-medium hover:underline"
                 href="./offer-details.html"
                 >Construction Services for Office Expansion Project
-            </a>
+            </Link>
         </div>
         <span class="p-4 flex items-center">12 october 2023</span>
         <span class="p-4 flex items-center">31 may 2023</span>
@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { Link } from "@inertiajs/vue3";
 import RequestFavorite from "../RequestFavorite.vue";
 import ActionBtns from "../ActionBtns.vue";
 
@@ -32,6 +33,7 @@ export default {
     props: ["index"],
 
     components: {
+        Link,
         RequestFavorite,
         ActionBtns,
     },
