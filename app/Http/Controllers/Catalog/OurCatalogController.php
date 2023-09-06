@@ -15,7 +15,7 @@ class OurCatalogController extends Controller
 
     public function create() 
     {
-        echo 'Create product form';
+        return Inertia::render('CreateProduct');
     }
 
     public function store() 
