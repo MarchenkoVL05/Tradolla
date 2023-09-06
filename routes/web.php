@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\AuthController;
 
 use App\Http\Controllers\Catalog\CatalogController;
 use App\Http\Controllers\Catalog\OurCatalogController;
@@ -24,6 +25,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/login', [AuthController::class, 'login'])->name('login');
 
 Route::get('/',[MainController::class, 'index'])->name('dashboard');
 Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications');

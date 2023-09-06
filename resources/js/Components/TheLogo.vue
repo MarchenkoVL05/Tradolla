@@ -1,9 +1,15 @@
 <template>
-    <a class="font-bold text-xl" href="/"
-        ><span class="text-orange-500">Trad</span>olla.com</a
-    >
+    <Link class="font-bold text-xl" href="/">
+        <span class="text-orange-500">Trad</span>olla.com
+    </Link>
 </template>
 
 <script>
-export default {};
+import { Link } from "@inertiajs/vue3";
+
+export default {
+    components: {
+        Link,
+    },
+};
 </script>
