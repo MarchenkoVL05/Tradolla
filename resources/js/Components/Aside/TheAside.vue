@@ -28,14 +28,16 @@
                 ></the-aside-menu>
             </div>
             <div v-if="menuOpen || (asideOpen && windowWidth >= 1024)">
-                <a class="group flex items-end gap-2 cursor-pointer" href="#"
+                <Link
+                    class="group flex items-end gap-2 cursor-pointer"
+                    href="/login"
                     ><img
                         class="max-h-7 group-hover:-translate-x-1 transition-all"
                         src="/images/log-out-icon.svg"
                         alt=""
                     /><span class="text-lg font-thin text-white"
                         >Log out</span
-                    ></a
+                    ></Link
                 >
                 <the-aside-profile-card
                     :open="menuOpen"
@@ -50,6 +52,7 @@
 </template>
 
 <script>
+import { Link } from "@inertiajs/vue3";
 import TheAsideMenu from "./TheAsideMenu.vue";
 import TheAsideProfileCard from "./TheAsideProfileCard.vue";
 import TheLogo from "../TheLogo.vue";
@@ -60,6 +63,7 @@ import menuLinks from "../../menuLinks.js";
 
 export default {
     components: {
+        Link,
         TheAsideMenu,
         TheAsideProfileCard,
         TheLogo,

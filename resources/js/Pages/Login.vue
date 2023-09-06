@@ -3,7 +3,7 @@
     <auth-layout>
         <form
             class="mx-auto p-6 max-w-full rounded-lg bg-white md:h-auto md:max-w-sm md:shadow"
-            action="javascript:window.location.href='dashboard.html'"
+            action="javascript:window.location.href='/'"
         >
             <h1 class="font-bold text-center text-2xl text-gray-800">
                 Sign In
