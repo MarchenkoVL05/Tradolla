@@ -21,4 +21,12 @@ class AuthController extends Controller
     {
         return Inertia::render('ForgotPassword');
     }
+
+    public function emailConfirm() {
+        return Inertia::render('EmailConfirm');
+    }
+
+    public function phoneConfirm() {
+        return Inertia::render('PhoneConfirm');
+    }
 }

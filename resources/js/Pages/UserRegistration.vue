@@ -3,7 +3,7 @@
     <auth-layout>
         <form
             class="mx-auto p-6 max-w-full rounded-lg bg-white md:h-auto md:max-w-2xl md:shadow"
-            action="javascript:window.location.href='email-confirm.html'"
+            action="javascript:window.location.href='/email-confirm'"
         >
             <h1 class="font-bold text-center text-2xl text-gray-800">
                 Sign Up
@@ -93,7 +93,7 @@
                         >Terms and Conditions
                     </Link>
                 </div>
-                <button-orange class="px-4 py-3" type="submit">
+                <button-orange class="px-4 py-3 font-medium" type="submit">
                     Sign up
                 </button-orange>
             </div>
