@@ -10,12 +10,12 @@
             </h1>
             <p class="mt-2 text-base text-center text-gray-600">
                 Don't have an account yet?
-                <a
+                <Link
                     class="text-orange-600 decoration-2 hover:underline font-medium"
-                    href="./registration.html"
+                    href="/register"
                 >
                     Sign up here
-                </a>
+                </Link>
             </p>
             <button
                 type="button"
@@ -66,11 +66,13 @@
 
 <script>
 import { Head as PageHead } from "@inertiajs/vue3";
+import { Link } from "@inertiajs/vue3";
 import AuthLayout from "../Layouts/AuthLayout.vue";
 
 export default {
     components: {
         PageHead,
+        Link,
         AuthLayout,
     },
 };
