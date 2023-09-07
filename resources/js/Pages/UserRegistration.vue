@@ -32,11 +32,11 @@
             <div class="grid grid-cols-1 md:grid-cols-3 md:gap-4">
                 <label class="flex flex-col mt-4 text-gray-600">
                     Email address
-                    <base-input></base-input>
+                    <base-input class="mt-2 py-2"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     Phone
-                    <base-input type="tel"></base-input>
+                    <base-input class="mt-2 py-2" type="tel"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     <the-tooltip>
@@ -47,37 +47,37 @@
                             Manager, director, employee etc.
                         </template>
                     </the-tooltip>
-                    <base-input></base-input>
+                    <base-input class="mt-2 py-2"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     Name
-                    <base-input></base-input>
+                    <base-input class="mt-2 py-2"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     Surname
-                    <base-input></base-input>
+                    <base-input class="mt-2 py-2"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     Patronymic (if any)
-                    <base-input></base-input>
+                    <base-input class="mt-2 py-2"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     Country
-                    <base-input type="tel"></base-input>
+                    <base-input class="mt-2 py-2" type="tel"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     City
-                    <base-input type="tel"></base-input>
+                    <base-input class="mt-2 py-2" type="tel"></base-input>
                 </label>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <label class="flex flex-col mt-4 text-gray-600">
                     Password
-                    <base-input type="password"></base-input>
+                    <base-input class="mt-2 py-2" type="password"></base-input>
                 </label>
                 <label class="flex flex-col mt-4 text-gray-600">
                     Confirm Password
-                    <base-input type="password"></base-input>
+                    <base-input class="mt-2 py-2" type="password"></base-input>
                 </label>
             </div>
             <div class="my-6 mx-auto w-1/2 h-[1px] bg-gray-200"></div>

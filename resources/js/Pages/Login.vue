@@ -31,24 +31,19 @@
             </div>
             <label class="flex flex-col mt-4 text-gray-600">
                 Email address
-                <input
-                    class="mt-2 p-2 border rounded focus:outline-none focus:border-orange-600"
-                    type="text"
-                />
+                <base-input class="mt-2 py-2"></base-input>
             </label>
             <label class="flex flex-col mt-4 text-gray-600">
                 <span class="flex justify-between">
                     Password
-                    <a
+                    <Link
                         class="text-orange-600 decoration-2 hover:underline font-medium"
-                        href="./forgot-password.html"
-                        >Forgot password?</a
+                        href="/forgot-password"
                     >
+                        Forgot password?
+                    </Link>
                 </span>
-                <input
-                    class="mt-2 p-2 border rounded focus:outline-none focus:border-orange-600"
-                    type="text"
-                />
+                <base-input class="mt-2 py-2"></base-input>
             </label>
             <label class="flex items-center gap-2 mt-4 text-gray-600">
                 <input class="w-4 h-4" type="checkbox" />
@@ -68,12 +63,14 @@
 import { Head as PageHead } from "@inertiajs/vue3";
 import { Link } from "@inertiajs/vue3";
 import AuthLayout from "../Layouts/AuthLayout.vue";
+import BaseInput from "../Components/Inputs/BaseInput.vue";
 
 export default {
     components: {
         PageHead,
         Link,
         AuthLayout,
+        BaseInput,
     },
 };
 </script>

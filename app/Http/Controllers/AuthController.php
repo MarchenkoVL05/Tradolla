@@ -16,4 +16,9 @@ class AuthController extends Controller
     {
         return Inertia::render('UserRegistration');
     }
+
+    public function forgot() 
+    {
+        return Inertia::render('ForgotPassword');
+    }
 }

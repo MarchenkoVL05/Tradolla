@@ -28,6 +28,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
+Route::get('/forgot-password', [AuthController::class, 'forgot'])->name('forgot');
 
 Route::get('/',[MainController::class, 'index'])->name('dashboard');
 Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications');
