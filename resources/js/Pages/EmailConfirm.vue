@@ -23,12 +23,12 @@
                 Send the code to the phone number
             </Link>
             <div class="mt-5 flex items-center justify-center gap-4">
-                <one-symbol-input autofocus></one-symbol-input>
-                <one-symbol-input></one-symbol-input>
-                <one-symbol-input></one-symbol-input>
-                <one-symbol-input></one-symbol-input>
-                <one-symbol-input></one-symbol-input>
-                <one-symbol-input></one-symbol-input>
+                <one-symbol-input @input="nextInputFocus($event)" autofocus />
+                <one-symbol-input @input="nextInputFocus($event)" />
+                <one-symbol-input @input="nextInputFocus($event)" />
+                <one-symbol-input @input="nextInputFocus($event)" />
+                <one-symbol-input @input="nextInputFocus($event)" />
+                <one-symbol-input @input="nextInputFocus($event)" />
             </div>
             <button-orange class="w-full mt-4 px-4 py-3 font-medium">
                 Confirm
@@ -59,6 +59,14 @@ export default {
         AuthLayout,
         ButtonOrange,
         OneSymbolInput,
+    },
+
+    methods: {
+        nextInputFocus(e) {
+            if (e.target.nextElementSibling && e.target.value !== "") {
+                e.target.nextElementSibling.focus();
+            }
+        },
     },
 };
 </script>
