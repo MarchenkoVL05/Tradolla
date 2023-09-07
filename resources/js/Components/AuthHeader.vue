@@ -1,12 +1,22 @@
 <template>
     <header
         class="relative w-full h-12 flex items-center justify-between px-3 bg-white shadow"
-        :class="{ 'flex-col': opened, 'h-auto': opened, 'py-2': opened }"
+        :class="{ 'flex-col': opened, 'h-auto': opened, 'py-3': opened }"
     >
         <the-logo></the-logo>
-        <div class="hidden justify-center items-center gap-14 md:flex">
-            <the-header-language-select></the-header-language-select>
-            <the-header-menu></the-header-menu>
+        <div
+            class="justify-center items-center md:flex"
+            :class="{
+                'gap-14': !opened,
+                'gap-6': opened,
+                hidden: !opened,
+                flex: opened,
+                'flex-col': opened,
+                'mt-6': opened,
+            }"
+        >
+            <the-header-language-select> </the-header-language-select>
+            <the-header-menu :opened="opened"></the-header-menu>
             <div class="flex items-center justify-center gap-6">
                 <Link
                     class="text-gray-800 transition-all hover:text-orange-500"
@@ -54,6 +64,7 @@ export default {
     data() {
         return {
             opened: false,
+            windowWidth: 0,
         };
     },
 
@@ -61,6 +72,16 @@ export default {
         toggleHeader() {
             this.opened = !this.opened;
         },
+    },
+
+    mounted() {
+        window.addEventListener("resize", () => {
+            this.windowWidth = window.innerWidth;
+
+            if (this.windowWidth <= 768) {
+                this.opened = false;
+            }
+        });
     },
 };
 </script>
