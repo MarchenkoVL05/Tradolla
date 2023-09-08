@@ -2,7 +2,7 @@
     <page-head><title>Email confirmation | Tradolla.com</title></page-head>
     <auth-layout>
         <form
-            action="javascript: window.location.href='company-register-1.html'"
+            action="javascript: window.location.href='company-register'"
             class="mx-auto p-6 max-w-full rounded-lg bg-white md:h-auto md:max-w-md md:shadow"
         >
             <h1 class="font-bold text-center text-2xl text-gray-800">

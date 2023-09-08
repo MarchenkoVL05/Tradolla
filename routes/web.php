@@ -31,6 +31,7 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::get('/forgot-password', [AuthController::class, 'forgot'])->name('forgot');
 Route::get('/email-confirm', [AuthController::class, 'emailConfirm'])->name('email-confirm');
 Route::get('/phone-confirm', [AuthController::class, 'phoneConfirm'])->name('phone-confirm');
+Route::get('/company-register', [AuthController::class, 'registerCompany'])->name('company-register');
 
 Route::get('/',[MainController::class, 'index'])->name('dashboard');
 Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications');

@@ -29,4 +29,9 @@ class AuthController extends Controller
     public function phoneConfirm() {
         return Inertia::render('PhoneConfirm');
     }
+
+    public function registerCompany()
+    {
+        return Inertia::render('CompanyRegistration');
+    }
 }
