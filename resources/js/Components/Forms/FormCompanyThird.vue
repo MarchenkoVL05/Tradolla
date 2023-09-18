@@ -28,7 +28,10 @@
             Annual income (USD)
             <base-input class="mt-2 py-2" type="number"></base-input>
         </label>
-        <button-orange class="w-full mt-5 px-4 py-3 font-medium">
+        <button-orange
+            @click="nextForm($event)"
+            class="w-full mt-5 px-4 py-3 font-medium"
+        >
             Next
             <img class="max-h-5" src="/images/arrow-btn-right.svg" alt="" />
         </button-orange>
@@ -45,6 +48,13 @@ export default {
         BaseInput,
         ButtonOrange,
         TheTooltip,
+    },
+
+    methods: {
+        nextForm(e) {
+            e.preventDefault();
+            this.$emit("next-form");
+        },
     },
 };
 </script>

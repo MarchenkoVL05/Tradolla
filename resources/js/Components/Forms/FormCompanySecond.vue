@@ -35,7 +35,10 @@
             </the-tooltip>
             <base-input class="mt-2 py-2" />
         </label>
-        <button-orange class="w-full px-4 py-3 mt-5 font-medium">
+        <button-orange
+            @click="nextForm($event)"
+            class="w-full px-4 py-3 mt-5 font-medium"
+        >
             Next
             <img class="max-h-5" src="/images/arrow-btn-right.svg" alt="" />
         </button-orange>
@@ -52,6 +55,13 @@ export default {
         BaseInput,
         ButtonOrange,
         TheTooltip,
+    },
+
+    methods: {
+        nextForm(e) {
+            e.preventDefault();
+            this.$emit("next-form");
+        },
     },
 };
 </script>

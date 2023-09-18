@@ -41,7 +41,10 @@
                 </label>
             </div>
         </div>
-        <button-orange class="w-full mt-5 px-4 py-3 font-medium">
+        <button-orange
+            @click="nextForm($event)"
+            class="w-full mt-5 px-4 py-3 font-medium"
+        >
             Next
             <img class="max-h-5" src="/images/arrow-btn-right.svg" alt="" />
         </button-orange>
@@ -79,6 +82,13 @@ export default {
                 "technology",
             ],
         };
+    },
+
+    methods: {
+        nextForm(e) {
+            e.preventDefault();
+            this.$emit("next-form");
+        },
     },
 };
 </script>

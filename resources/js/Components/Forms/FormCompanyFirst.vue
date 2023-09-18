@@ -36,8 +36,6 @@ import BaseInput from "../Inputs/BaseInput.vue";
 import ButtonOrange from "../Buttons/ButtonOrange.vue";
 
 export default {
-    props: ["formCounter"],
-
     components: {
         BaseInput,
         ButtonOrange,
@@ -46,12 +44,8 @@ export default {
     methods: {
         nextForm(e) {
             e.preventDefault();
-            this.$emit("goNextForm", this.formCounter + 1);
+            this.$emit("next-form");
         },
-    },
-
-    mounted() {
-        console.log(this.formCounter);
     },
 };
 </script>

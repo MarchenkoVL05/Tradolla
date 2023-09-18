@@ -1,6 +1,6 @@
 <template>
     <form
-        action="javascript:window.location.href='dashboard.html'"
+        action="javascript:window.location.href='/'"
         class="relative mx-auto p-6 max-w-full rounded-lg bg-white md:h-auto md:max-w-2xl md:shadow"
     >
         <div
@@ -60,7 +60,10 @@
                         hidden
                         type="file"
                     />
-                    <button-white class="mt-2 px-3 py-2 font-medium">
+                    <button-white
+                        class="mt-2 px-3 py-2 font-medium"
+                        @click.prevent
+                    >
                         choose file
                     </button-white>
                 </label>
@@ -100,7 +103,10 @@
                 class="mt-2 p-2 border rounded focus:outline-none focus:border-orange-600"
             ></textarea>
         </label>
-        <button-orange class="w-full px-4 py-3 mt-5 font-medium">
+        <button-orange
+            @click="nextForm($event)"
+            class="w-full px-4 py-3 mt-5 font-medium"
+        >
             Finish <img class="max-h-5" src="/images/finish.svg" alt="" />
         </button-orange>
     </form>

@@ -3,24 +3,21 @@
     <auth-layout>
         <form-company-first
             v-if="formCounter == 1"
-            :formCounter="formCounter"
+            @next-form="handleNextForm"
         />
         <form-company-second
             v-if="formCounter == 2"
-            :formCounter="formCounter"
+            @next-form="handleNextForm"
         />
         <form-company-third
             v-if="formCounter == 3"
-            :formCounter="formCounter"
+            @next-form="handleNextForm"
         />
         <form-company-fourth
             v-if="formCounter == 4"
-            :formCounter="formCounter"
+            @next-form="handleNextForm"
         />
-        <form-company-fifth
-            v-if="formCounter == 5"
-            :formCounter="formCounter"
-        />
+        <form-company-fifth v-if="formCounter == 5" />
     </auth-layout>
 </template>
 
@@ -51,8 +48,10 @@ export default {
     },
 
     methods: {
-        goNextForm() {
-            this.formCounter;
+        handleNextForm() {
+            if (this.formCounter < 5) {
+                this.formCounter += 1;
+            }
         },
     },
 };
