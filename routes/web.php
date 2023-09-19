@@ -37,22 +37,29 @@ Route::get('/',[MainController::class, 'index'])->name('dashboard');
 Route::get('/notifications', [NotificationController::class, 'index'])->name('notifications');
 Route::get('/favorites', [FavoriteController::class, 'index'])->name('favorites');
 
-Route::get('/catalog',[CatalogController::class, 'index'])->name('catalog');
-Route::get('/catalog/our',[OurCatalogController::class, 'index'])->name('catalog.our.index');
-Route::get('/catalog/our/create', [OurCatalogController::class, 'create'])->name('catalog.our.create');
-Route::post('/catalog/our', [OurCatalogController::class, 'store'])->name('catalog.our.store');
-Route::get('/catalog/{product}',[CatalogController::class, 'show'])->name('catalog.show');
+Route::prefix('catalog')->group(function() {
+    Route::get('/',[CatalogController::class, 'index'])->name('catalog');
+    Route::get('/our',[OurCatalogController::class, 'index'])->name('catalog.our');
+    Route::get('/our/create', [OurCatalogController::class, 'create'])->name('catalog.our.create');
+    Route::post('/our', [OurCatalogController::class, 'store'])->name('catalog.our.store');
+    Route::get('/{product}',[CatalogController::class, 'show'])->name('catalog.show');
+});
 
-Route::get("/procurements", [ProcurementController::class, 'index'])->name('procurements');
-Route::get("/procurements/orders", [OrderController::class, 'index'])->name('orders');
-Route::get("/procurements/orders/{order}", [OrderController::class, 'show'])->name('orders.show');
-Route::get('/procurements/our',[OurProcurementController::class, 'index'])->name('procurements.our.index');
-Route::get('/procurements/our/create', [OurProcurementController::class, 'create'])->name('procurements.our.create');
-Route::post('/procurements/our', [OurProcurementController::class, 'store'])->name('procurements.our.store');
-Route::get("/procurements/{offer}", [ProcurementController::class, 'show'])->name('procurements.show');
-Route::get("/procurements/{offer}/create", [OrderController::class, 'create'])->name('orders.create');
 
-Route::get('/companies',[CompanyController::class, 'index'])->name('companies');
-Route::get('/companies/{company}',[CompanyController::class, 'show'])->name('companies.show');
+Route::prefix('procurements')->group(function() {
+    Route::get("/", [ProcurementController::class, 'index'])->name('procurements');
+    Route::get("/orders", [OrderController::class, 'index'])->name('procurements.orders');
+    Route::get("/orders/{order}", [OrderController::class, 'show'])->name('procurements.orders.show');
+    Route::get('/our',[OurProcurementController::class, 'index'])->name('procurements.our');
+    Route::get('/our/create', [OurProcurementController::class, 'create'])->name('procurements.our.create');
+    Route::post('/our', [OurProcurementController::class, 'store'])->name('procurements.our.store');
+    Route::get("/{procurement}", [ProcurementController::class, 'show'])->name('procurements.show');
+    Route::get("/{procurement}/create", [OrderController::class, 'create'])->name('procurements.orders.create');
+});
+
+Route::prefix('companies')->group(function() {
+    Route::get('/',[CompanyController::class, 'index'])->name('companies');
+    Route::get('/{company}',[CompanyController::class, 'show'])->name('companies.show');
+});
 
 Route::get('/profile',[ProfileController::class, 'index'])->name('profile');
